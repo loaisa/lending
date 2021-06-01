@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+	<title>123</title>
+</head>
+
+    <header>
+		<span class="material-icons">
+		menu
+		</span>
+			<div class="menu-overlay">
+	           <ul class="menu">
+                   <li><a href="#">home</a></li>
+	                <li><a href="#">about</a></li>
+	                <li><a href="#">contact</a></li>
+	            </ul>
+	         </div>
+	</header>
+
+      <main>
+          <section class="about">
+            <div class="background_about">
+                 </div>
+                <div class="about_content">
+                    <h1>Не знаешь о чём пообщаться?</h1>
+                    <!-- в этом блоке будем выводить готовое письмо --> <div class="text" id="text_here"></div> <!-- блок с кнопкой, по нажатию на которую запускается нужная функция в скрипте -->
+                    <div class="controls">
+                        <button class="btn" value="Получить новый текст" onclick="get_text();">Получить новый текст</button>
+                    </div>
+                </div>
+          </section>
+          <section class="Info">
+              <div>
+                  <h1> попробуем что-нибудь поискать?</h1>
+                  <p>Куча разных тем</p>
+              </div>
+          </section>
+      </main>
+    <script type="text/javascript" src={% static "js.js" %}></script>
+</html>
